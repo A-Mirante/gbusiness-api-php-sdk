@@ -1,6 +1,6 @@
 {
-  "name": "satispay/gbusiness-api-php-sdk",
-  "description": "Satispay GBusiness API PHP SDK",
+  "name": "A-Mirante/gbusiness-api-php-sdk",
+  "description": "Satispay GBusiness API PHP SDK modified for IdempotencyKey",
   "license": "MIT",
   "keywords": [
     "satispay",
