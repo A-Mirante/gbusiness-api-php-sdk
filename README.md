@@ -8,7 +8,7 @@
 Run the following command:
 
 ```bash
-composer require satispay/gbusiness-api-php-sdk
+composer require A-Mirante/gbusiness-api-php-sdk
 ```
 
 If you do not wish to use Composer, import the `init.php` file.
