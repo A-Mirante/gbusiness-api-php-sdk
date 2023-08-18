@@ -162,6 +162,11 @@ class Request
         $pluginNameHeader = Api::getPluginNameHeader();
         $typeHeader = Api::getTypeHeader();
         $trackingHeader = Api::getTrackingHeader();
+        $idempotencyKey = Api::getIdempotencyKey();
+
+        if(!empty($idempotencyKey)){
+            array_push($headers, "Idempotency-Key: ".$idempotencyKey);
+        }
 
         if (!empty($platformHeader)) {
             array_push($headers, self::HEADER_OS.": ".$platformHeader);

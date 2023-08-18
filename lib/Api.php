@@ -5,6 +5,7 @@ class Api
 {
     private static $env = "production";
     private static $privateKey;
+    private static $idempotencyKey;
     private static $publicKey;
     private static $keyId;
     private static $version = "1.2.0";
@@ -192,6 +193,28 @@ class Api
     {
         self::$privateKey = $value;
     }
+
+
+
+    /**
+     * Get private key
+     * @return string
+     */
+    public static function getIdempotencyKey()
+    {
+        return self::$idempotencyKey;
+    }
+    /**
+     * Set private key
+     * @param string $value
+     */
+    public static function setIdempotencyKey($value)
+    {
+        self::$idempotencyKey = $value;
+    }
+
+
+
 
   /**
    * Get public key
